@@ -20,6 +20,9 @@
   "build": {
     "command": "pnpm run cf:build"
   },
+  "vars": {
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-ZZHHT3HGXB"
+  },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
