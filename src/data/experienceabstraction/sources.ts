@@ -1,0 +1,92 @@
+import type { DataSource } from './types';
+
+export const CHECKED_AT = '2026-07-11';
+
+export const sources = {
+  roblox: {
+    type: 'official',
+    label: 'Experience Abstraction on Roblox',
+    url: 'https://www.roblox.com/games/131320856116838/Experience-Abstraction',
+    checkedAt: CHECKED_AT,
+    confidence: 'high',
+    note: 'Source of truth for the game name, creator, description, play link, and the three published abstraction conditions.',
+  },
+  robloxApi: {
+    type: 'platform_api',
+    label: 'Roblox Games API universe snapshot',
+    url: 'https://games.roblox.com/v1/games?universeIds=10352185757',
+    checkedAt: CHECKED_AT,
+    confidence: 'high',
+    note: 'Confirms the root Place ID, Universe ID, creator, Social genre, server size, visits, and update timestamp.',
+  },
+  creator: {
+    type: 'official',
+    label: 'pawlooz on Roblox',
+    url: 'https://www.roblox.com/users/1693631698/profile',
+    checkedAt: CHECKED_AT,
+    confidence: 'high',
+    note: 'Roblox creator profile linked by the current Games API response.',
+  },
+  robloxMedia: {
+    type: 'platform_api',
+    label: 'Roblox approved experience media',
+    url: 'https://games.roblox.com/v2/games/10352185757/media',
+    checkedAt: CHECKED_AT,
+    confidence: 'high',
+    note: 'Approved official screenshots used by the site visual system.',
+  },
+  allThingsHow: {
+    type: 'guide_site',
+    label: 'AllThings.How abstraction guide',
+    url: 'https://allthings.how/experience-abstraction-on-roblox-how-to-abstract-explained/',
+    checkedAt: CHECKED_AT,
+    confidence: 'medium',
+    note: 'Secondary cross-check for the three conditions already published on Roblox. No unverified timer is imported.',
+  },
+  howToVideo: {
+    type: 'video',
+    label: 'Roblox Master Guides — How to Abstract',
+    url: 'https://www.youtube.com/watch?v=D8mBiEX8am4',
+    checkedAt: CHECKED_AT,
+    confidence: 'medium',
+    note: 'Exact-intent walkthrough selected from current search results and verified through YouTube oEmbed.',
+  },
+  gameplayVideo: {
+    type: 'video',
+    label: 'craby19 — Experience Abstraction gameplay',
+    url: 'https://www.youtube.com/watch?v=PpZ2Hv1X8w0',
+    checkedAt: CHECKED_AT,
+    confidence: 'medium',
+    note: 'Exact-game gameplay reference verified through YouTube oEmbed.',
+  },
+} satisfies Record<string, DataSource>;
+
+export const officialGameFacts = {
+  name: 'Experience Abstraction',
+  siteName: 'Experience Abstraction Wiki',
+  developer: 'pawlooz',
+  robloxUrl:
+    'https://www.roblox.com/games/131320856116838/Experience-Abstraction',
+  creatorUrl: 'https://www.roblox.com/users/1693631698/profile',
+  canonicalUrl: 'https://www.experienceabstraction.wiki',
+  placeId: '131320856116838',
+  universeId: '10352185757',
+  creatorUserId: '1693631698',
+  genre: 'Social',
+  maxPlayers: 30,
+  activePlayersAtCheck: 7509,
+  visitsAtCheck: 1212092,
+  createdAt: '2026-06-18T19:02:44.610Z',
+  updatedAt: '2026-07-10T22:33:48.562Z',
+  checkedAt: CHECKED_AT,
+  icon: '/experienceabstraction/icon.png',
+  heroImage: '/experienceabstraction/media/official-3.png',
+  darkImage: '/experienceabstraction/media/official-1.png',
+  encounterImage: '/experienceabstraction/media/official-2.png',
+  abstractionConditions: [
+    'Isolate yourself from other players',
+    'Stay in the dark for a long time',
+    'Hang out around abstracted people',
+  ],
+  source: sources.roblox,
+};
