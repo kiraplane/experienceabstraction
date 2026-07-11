@@ -2,7 +2,7 @@
 
 import { Routes } from '@/routes';
 import type { NestedMenuItem } from '@/types';
-import { BookOpen, Eye, Link2, Sparkles } from 'lucide-react';
+import { BookOpen, Eye, Map, MapPin, Sparkles } from 'lucide-react';
 
 export function useNavbarLinks(): NestedMenuItem[] {
   return [
@@ -25,10 +25,16 @@ export function useNavbarLinks(): NestedMenuItem[] {
       icon: <BookOpen className="size-4" />,
     },
     {
-      title: 'Official Links',
-      href: Routes.OfficialLinks,
+      title: 'Map',
+      href: Routes.Map,
       external: false,
-      icon: <Link2 className="size-4" />,
+      icon: <Map className="size-4" />,
+    },
+    {
+      title: 'Locations',
+      href: Routes.Locations,
+      external: false,
+      icon: <MapPin className="size-4" />,
     },
   ];
 }

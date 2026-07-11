@@ -8,6 +8,10 @@ const coreRoutes = [
   Routes.Root,
   Routes.Guides,
   Routes.Gameplay,
+  Routes.Codes,
+  Routes.Characters,
+  Routes.Map,
+  Routes.Locations,
   Routes.OfficialLinks,
   Routes.PrivacyPolicy,
   Routes.TermsOfService,
@@ -36,6 +40,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             ? 1
             : route === Routes.Guides ||
                 route === Routes.HowToAbstract ||
+                route === Routes.Characters ||
+                route === Routes.Map ||
                 route === Routes.OfficialLinks
               ? 0.9
               : route.startsWith('/guides/')

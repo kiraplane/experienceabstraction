@@ -1,4 +1,5 @@
 import { FaqSection } from '@/components/experienceabstraction/faq-section';
+import { YoutubeLitePlayer } from '@/components/experienceabstraction/youtube-lite-player';
 import Container from '@/components/layout/container';
 import { JsonLd } from '@/components/seo/json-ld';
 import { Badge } from '@/components/ui/badge';
@@ -89,9 +90,14 @@ const keywordLinks = [
   },
   { label: 'Experience Abstraction gameplay', href: '/gameplay' },
   { label: 'Experience Abstraction guides', href: '/guides' },
+  { label: 'Experience Abstraction codes', href: '/codes' },
+  { label: 'Experience Abstraction characters', href: '/characters' },
+  { label: 'Experience Abstraction map', href: '/map' },
+  { label: 'Experience Abstraction locations', href: '/locations' },
 ];
 
 export function ExperienceAbstractionHomePage() {
+  const gameplayVideo = getGuide('how-to-abstract')?.video;
   const featuredGuides = featuredGuideSlugs
     .map((slug) => getGuide(slug))
     .filter((guide) => Boolean(guide));
@@ -226,14 +232,22 @@ export function ExperienceAbstractionHomePage() {
           <div className="min-w-0">
             <div className="overflow-hidden rounded-2xl border border-fuchsia-300/15 bg-black shadow-2xl shadow-fuchsia-950/40">
               <div className="relative aspect-[16/9]">
-                <Image
-                  src={officialGameFacts.heroImage}
-                  alt="Official Experience Abstraction Roblox screenshot"
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 48vw, 100vw"
-                  className="object-cover"
-                />
+                {gameplayVideo ? (
+                  <YoutubeLitePlayer
+                    videoId={gameplayVideo.id}
+                    title={gameplayVideo.title}
+                    thumbnailUrl={gameplayVideo.thumbnailUrl}
+                  />
+                ) : (
+                  <Image
+                    src={officialGameFacts.heroImage}
+                    alt="Official Experience Abstraction Roblox screenshot"
+                    fill
+                    priority
+                    sizes="(min-width: 1024px) 48vw, 100vw"
+                    className="object-cover"
+                  />
+                )}
               </div>
               <div className="hidden items-center gap-3 bg-[#0B0713] p-3 sm:flex">
                 <Image
@@ -245,10 +259,11 @@ export function ExperienceAbstractionHomePage() {
                 />
                 <div className="min-w-0">
                   <p className="font-semibold text-white">
-                    Official Roblox media
+                    How to Abstract walkthrough
                   </p>
                   <p className="text-slate-400 text-xs">
-                    Experience by pawlooz · checked July 11, 2026
+                    {gameplayVideo?.channel || 'YouTube'} · click play to load
+                    the video
                   </p>
                 </div>
               </div>
@@ -401,7 +416,8 @@ export function ExperienceAbstractionHomePage() {
               </h2>
               <p className="mt-3 text-sm leading-7 text-slate-400">
                 Every supported high-intent route is linked here. Unsupported
-                codes, tier lists, and databases are intentionally excluded.
+                codes status, characters, map routes, locations, and core guides
+                each have a focused landing page.
               </p>
             </div>
             <div className="grid gap-2 sm:grid-cols-2">

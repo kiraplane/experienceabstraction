@@ -57,3 +57,44 @@ export interface Guide {
   }>;
   relatedRoutes: string[];
 }
+
+export interface WikiTopicPage {
+  slug: 'codes' | 'characters' | 'map' | 'locations';
+  title: string;
+  seoTitle: string;
+  seoDescription: string;
+  badge: string;
+  intro: string;
+  heroImage: string;
+  heroAlt: string;
+  checkedAt: string;
+  facts: Array<{
+    label: string;
+    value: string;
+    note: string;
+  }>;
+  sections: Array<{
+    heading: string;
+    paragraphs: string[];
+    bullets?: string[];
+  }>;
+  video?: {
+    id: string;
+    title: string;
+    channel: string;
+    url: string;
+    thumbnailUrl: string;
+    publishedAt: string;
+    checkedAt: string;
+    caption: string;
+  };
+  faq: Array<{
+    question: string;
+    answer: string;
+  }>;
+  relatedRoutes: Array<{
+    href: string;
+    label: string;
+    description: string;
+  }>;
+}

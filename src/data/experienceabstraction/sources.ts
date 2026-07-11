@@ -59,6 +59,30 @@ export const sources = {
     confidence: 'medium',
     note: 'Exact-game gameplay reference verified through YouTube oEmbed.',
   },
+  caineCellarVideo: {
+    type: 'video',
+    label: 'codeshunterx4 — Caine and Cellar walkthrough',
+    url: 'https://www.youtube.com/watch?v=pKiYkkQFkmA',
+    checkedAt: CHECKED_AT,
+    confidence: 'medium',
+    note: 'Current July update walkthrough cross-checked against a second independent Caine guide and visually inspected at key steps.',
+  },
+  caineUpdateVideo: {
+    type: 'video',
+    label: 'Challenge Breaker Gamer — Caine update walkthrough',
+    url: 'https://www.youtube.com/watch?v=gLYbYzUrIAA',
+    checkedAt: CHECKED_AT,
+    confidence: 'medium',
+    note: 'Second current walkthrough confirming Caine, abstraction, and the update sequence.',
+  },
+  longGameplayVideo: {
+    type: 'video',
+    label: 'Robox — current-build Experience Abstraction gameplay',
+    url: 'https://www.youtube.com/watch?v=aJjPh2YoE_0',
+    checkedAt: CHECKED_AT,
+    confidence: 'medium',
+    note: 'Long-form current gameplay used to inspect the circus layout and recognizable route landmarks.',
+  },
 } satisfies Record<string, DataSource>;
 
 export const officialGameFacts = {
@@ -74,8 +98,8 @@ export const officialGameFacts = {
   creatorUserId: '1693631698',
   genre: 'Social',
   maxPlayers: 30,
-  activePlayersAtCheck: 7509,
-  visitsAtCheck: 1212092,
+  activePlayersAtCheck: 6494,
+  visitsAtCheck: 1277274,
   createdAt: '2026-06-18T19:02:44.610Z',
   updatedAt: '2026-07-10T22:33:48.562Z',
   checkedAt: CHECKED_AT,

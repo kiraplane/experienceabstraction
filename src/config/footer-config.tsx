@@ -38,6 +38,15 @@ export function useFooterLinks(): NestedMenuItem[] {
       ],
     },
     {
+      title: 'Game Data',
+      items: [
+        { title: 'Codes Status', href: Routes.Codes, external: false },
+        { title: 'Characters', href: Routes.Characters, external: false },
+        { title: 'Map Guide', href: Routes.Map, external: false },
+        { title: 'Locations', href: Routes.Locations, external: false },
+      ],
+    },
+    {
       title: 'Legal',
       items: [
         {

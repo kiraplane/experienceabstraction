@@ -19,13 +19,13 @@ export const guides: Guide[] = [
     ],
     sourceNotes:
       'The route is anchored to the three conditions in the official Roblox description and cross-checked against current exact-game search results. No exact timer or hidden meter is claimed.',
-    coverImageUrl: 'https://i.ytimg.com/vi/D8mBiEX8am4/hqdefault.jpg',
+    coverImageUrl: 'https://i.ytimg.com/vi/D8mBiEX8am4/maxresdefault.jpg',
     video: {
       id: 'D8mBiEX8am4',
       title: 'How to Abstract in EXPERIENCE ABSTRACTION (Roblox)',
       channel: 'Roblox Master Guides',
       url: 'https://www.youtube.com/watch?v=D8mBiEX8am4',
-      thumbnailUrl: 'https://i.ytimg.com/vi/D8mBiEX8am4/hqdefault.jpg',
+      thumbnailUrl: 'https://i.ytimg.com/vi/D8mBiEX8am4/maxresdefault.jpg',
       checkedAt: '2026-07-11',
     },
     tags: ['How to Abstract', 'Roblox', 'Mechanics'],

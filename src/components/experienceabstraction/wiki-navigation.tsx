@@ -10,11 +10,15 @@ import {
   Compass,
   ExternalLink,
   Eye,
+  Gift,
   Lightbulb,
   Link2,
+  Map,
+  MapPin,
   Moon,
   ShieldCheck,
   Sparkles,
+  UsersRound,
 } from 'lucide-react';
 import type { ReactNode } from 'react';
 
@@ -59,6 +63,16 @@ const wikiNavGroups: WikiNavGroup[] = [
       { href: '/guides/beginner-guide', label: 'Beginner Guide' },
     ],
   },
+  {
+    title: 'World & Updates',
+    icon: Map,
+    links: [
+      { href: '/characters', label: 'Characters & Caine' },
+      { href: '/map', label: 'Map Guide' },
+      { href: '/locations', label: 'Locations' },
+      { href: '/codes', label: 'Codes Status' },
+    ],
+  },
 ];
 
 const iconMap = {
@@ -69,6 +83,10 @@ const iconMap = {
   '/guides/how-to-abstract': Sparkles,
   '/guides/how-to-avoid-abstraction': ShieldCheck,
   '/guides/beginner-guide': Lightbulb,
+  '/codes': Gift,
+  '/characters': UsersRound,
+  '/map': Map,
+  '/locations': MapPin,
 };
 
 function isCurrentPath(currentPath: string | undefined, href: string) {

@@ -27,6 +27,13 @@ Balanced mode was run on 2026-07-11 using the shared SERPER_API_KEY without prin
 - Modifier autocomplete: not used.
 - Bulk per-candidate SERP verification: not used.
 
+An explicit post-launch deep scan added 4 autocomplete and 4 related/PAA
+search requests for `codes`, `characters`, `map`, and `locations`, bringing the
+project total to approximately 18 Serper requests. The character query produced
+an exact game-intent autocomplete signal; codes, map, and locations remained
+mixed with non-game meanings, so current Roblox and YouTube evidence controls
+the page scope.
+
 The head term is ambiguous outside Roblox. Exact-game results consistently surface the official Roblox page and current how-to-abstract videos. Generic psychology, programming, healthcare, philosophy, and game-studio results are unrelated and must be ignored.
 
 ### Current source checks
@@ -51,10 +58,11 @@ The head term is ambiguous outside Roblox. Exact-game results consistently surfa
 | how to avoid abstraction | survival / prevention | /guides/how-to-avoid-abstraction | P1 | keep | Official conditions; competitor heading | Mirror the verified conditions conservatively. |
 | experience abstraction beginner guide | first-session route | /guides/beginner-guide | P1 | keep | Exact-game gameplay videos; normal player workflow | Original practical guide with verified mechanics only. |
 | experience abstraction official link | safe play entry | /official-links | P1 | keep | Official Roblox page | Prevent wrong-game and fake-download confusion. |
-| experience abstraction codes | redeem codes | none | P2 | watch | No autocomplete, PAA, official code field, badge or reliable source | Do not launch a codes page. |
+| experience abstraction codes | redeem codes | /codes | P2 | keep | User-requested page; official/API/search checks found no active codes | Publish a current zero-code status without invented strings. |
 | experience abstraction tier list | ranking | none | P3 | ignore | No ranked entities or search evidence | Template residue; do not create. |
-| experience abstraction characters | entity database | none | P2 | watch | No current search/source support | Revisit only after game-specific demand emerges. |
-| experience abstraction map / locations | navigation | none | P2 | watch | No exact long-tail evidence | Do not infer named locations from TADC lore. |
+| experience abstraction characters | current roster / Caine | /characters | P1 | keep | Exact autocomplete plus two July Caine/Cellar walkthroughs | Separate Caine and player states from original-series lore. |
+| experience abstraction map | route orientation | /map | P1 | keep | Long-form current gameplay and official media | Use recognizable landmarks; no invented coordinates. |
+| experience abstraction locations | mechanic location choice | /locations | P1 | keep | Exact how-to results, room/darkness guidance, Caine/Cellar update | Own location decisions separately from the overview map. |
 | experience abstraction endings | ending tracker | none | P3 | ignore | No confirmed ending system | Unsupported. |
 | abstraction tadc wiki | original-series lore | none | P3 | ignore | Related search points to GLITCH fandom | Wrong entity for this site. |
 | addition abstraction wiki | different Roblox game | none | P3 | ignore | SERP result for a separate place | Strict entity exclusion. |
@@ -73,7 +81,10 @@ The head term is ambiguous outside Roblox. Exact-game results consistently surfa
 | experience abstraction gameplay | none before launch | gap | new_page | /gameplay |
 | experience abstraction beginner guide | none before launch | gap | new_page | /guides/beginner-guide |
 | experience abstraction guide | guides hub | full | covered | /guides |
-| experience abstraction codes | none | insufficient source | watch | none |
+| experience abstraction codes | none before expansion | gap | new_page | /codes |
+| experience abstraction characters | none before expansion | gap | new_page | /characters |
+| experience abstraction map | gameplay page only | partial | new_page | /map |
+| experience abstraction locations | mechanic guides only | partial | new_page | /locations |
 | experience abstraction tier list | none | unsupported | ignore | none |
 
 ## 5. Competitor Benchmark
