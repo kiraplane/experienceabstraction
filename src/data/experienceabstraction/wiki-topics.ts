@@ -198,6 +198,18 @@ export const wikiTopics: Record<WikiTopicPage['slug'], WikiTopicPage> = {
         ],
       },
       {
+        heading: 'Resolve conflicting Caine instructions before retrying',
+        paragraphs: [
+          'Current exact-game pages do not all describe the trigger the same way. Some repeat the demonstrated two-player chat sequence, while others add a timer, stage position, or hidden location requirement without showing a repeatable test. Treat the two-player roles and the plain Caine chat message as the verified core; treat extra timing or coordinate claims as unconfirmed variables.',
+          'When a guide conflicts with what your server shows, change one variable at a time. Confirm the abstracted state, keep the second player nearby, send only Caine in chat, and then move to a fresh server before testing a different location. This prevents a stale instance from looking like proof of a new character rule.',
+        ],
+        bullets: [
+          'Verified core: one abstracted player and one nearby summoning player.',
+          'Repeatable input: type Caine plainly in Roblox chat.',
+          'Not verified as mandatory: stage coordinates, a fixed timer, or a permanent unlock.',
+        ],
+      },
+      {
         heading: 'Why this page does not copy the entire series cast',
         paragraphs: [
           'Search results for “Experience Abstraction characters” are dominated by pages about abstracted characters in the original series. Those pages can explain the inspiration, but they are not reliable evidence for the Roblox game’s current roster, commands, or mechanics.',
@@ -330,6 +342,19 @@ export const wikiTopics: Record<WikiTopicPage['slug'], WikiTopicPage> = {
         paragraphs: [
           'Current July walkthroughs describe the Cellar as an update-linked destination reached through a player-state interaction. You should not waste time searching every wall for a permanent Cellar door. The reliable route starts with an abstracted player and a second nearby player who summons Caine through chat.',
           'Because the destination depends on a recent sequence, a stale server can behave differently from a fresh one. Rejoin if the command produces Caine but the event does not progress, and keep speculative secret-door coordinates out of the route until they are repeatable.',
+        ],
+      },
+      {
+        heading: 'Fresh-server troubleshooting checklist',
+        paragraphs: [
+          'A server can stay on an older build after an update. If the chat command, character state, or Cellar transition behaves differently from a current walkthrough, do not immediately assume the map route changed. Leave the instance, join a newly started public or private server, and repeat the same two-player setup before adding another condition.',
+          'The clean test order is state, distance, command, then server version. Location comes last because the stage is a convenient landmark rather than a verified fixed trigger. Record which step failed so a later update can correct one rule without rewriting the whole map.',
+        ],
+        bullets: [
+          'Confirm the target has fully changed into the abstracted state.',
+          'Keep the normal player close enough to coordinate the event.',
+          'Send Caine without extra punctuation or command prefixes.',
+          'Retry in a fresh server before testing speculative coordinates.',
         ],
       },
       {
@@ -479,6 +504,13 @@ export const wikiTopics: Record<WikiTopicPage['slug'], WikiTopicPage> = {
         paragraphs: [
           'The Cellar is the most important new location signal in current July gameplay, but it does not behave like a door you simply find during exploration. The demonstrated route requires one player to become abstracted and a nearby player to summon Caine through chat.',
           'If the sequence stalls, verify both roles, keep the players close, and try a newly started server. Do not substitute original-series lore for the Roblox route: this page records only the currently demonstrated entry workflow, not speculative Cellar contents or permanent coordinates.',
+        ],
+      },
+      {
+        heading: 'Separate a meeting point from a trigger condition',
+        paragraphs: [
+          'The stage appears often because it is easy for two players to recognize and regroup there. That makes it a good setup location, but it does not prove that Caine only works on the stage. The current cross-check supports the two player jobs and chat input more strongly than any fixed coordinate.',
+          'If one location fails, first test a fresh server with the same player roles. Only treat a location as required after the same result repeats across servers and more than one current gameplay source shows the condition.',
         ],
       },
     ],
