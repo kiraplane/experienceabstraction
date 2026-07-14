@@ -1,6 +1,6 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-07-11';
+export const CHECKED_AT = '2026-07-14';
 
 export const sources = {
   roblox: {
@@ -98,10 +98,10 @@ export const officialGameFacts = {
   creatorUserId: '1693631698',
   genre: 'Social',
   maxPlayers: 30,
-  activePlayersAtCheck: 6494,
-  visitsAtCheck: 1277274,
+  activePlayersAtCheck: 11863,
+  visitsAtCheck: 6756988,
   createdAt: '2026-06-18T19:02:44.610Z',
-  updatedAt: '2026-07-10T22:33:48.562Z',
+  updatedAt: '2026-07-14T01:06:21.3702306Z',
   checkedAt: CHECKED_AT,
   icon: '/experienceabstraction/icon.png',
   heroImage: '/experienceabstraction/media/official-3.png',
