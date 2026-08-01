@@ -20,7 +20,7 @@ const coreRoutes = [
 ];
 
 const guideRoutes = guides.map((guide) => `/guides/${guide.slug}`);
-const stableLastModified = new Date('2026-07-11T00:00:00.000Z');
+const stableLastModified = new Date('2026-07-31T00:00:00.000Z');
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const sitemapList: MetadataRoute.Sitemap = [];
