@@ -154,9 +154,10 @@ export function ExperienceAbstractionHomePage() {
               Experience Abstraction Wiki
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-              Learn the three ways to abstract, reverse them to survive longer,
-              and enter the correct Roblox experience without fake codes,
-              scripts, or lookalike-game confusion.
+              Learn the three official ways to lose Sanity, reverse them to
+              resist abstraction longer, and enter the correct Roblox
+              experience without fake codes, scripts, or lookalike-game
+              confusion.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button
@@ -441,7 +442,7 @@ export function ExperienceAbstractionHomePage() {
               {
                 question: 'How do you abstract in Experience Abstraction?',
                 answer:
-                  'Use one of the three conditions published on Roblox: isolate from other players, stay in darkness for a long time, or remain around someone who is already abstracted.',
+                  'Use one of the three conditions published on Roblox: isolate from other players, stay in darkness for a very long time, or remain around someone who is already abstracted.',
               },
               {
                 question: 'How do you avoid abstraction?',

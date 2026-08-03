@@ -1,6 +1,6 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-08-01';
+export const CHECKED_AT = '2026-08-03';
 
 export const sources = {
   roblox: {
@@ -9,7 +9,7 @@ export const sources = {
     url: 'https://www.roblox.com/games/131320856116838/Experience-Abstraction',
     checkedAt: CHECKED_AT,
     confidence: 'high',
-    note: 'Source of truth for the game name, creator, description, play link, and the three published abstraction conditions.',
+    note: 'Source of truth for the game name, creator, description, play link, and the three published ways to lose Sanity.',
   },
   robloxApi: {
     type: 'platform_api',
@@ -97,19 +97,20 @@ export const officialGameFacts = {
   universeId: '10352185757',
   creatorUserId: '1693631698',
   genre: 'Social',
-  maxPlayers: 30,
-  activePlayersAtCheck: 11863,
-  visitsAtCheck: 6756988,
-  createdAt: '2026-06-18T19:02:44.610Z',
-  updatedAt: '2026-07-14T01:06:21.3702306Z',
+  maxPlayers: 20,
+  activePlayersAtCheck: 2274,
+  visitsAtCheck: 28348376,
+  createdAt: '2026-06-18T19:02:44.61Z',
+  updatedAt: '2026-08-02T21:41:45.6903631Z',
   checkedAt: CHECKED_AT,
   icon: '/experienceabstraction/icon.png',
   heroImage: '/experienceabstraction/media/official-3.png',
   darkImage: '/experienceabstraction/media/official-1.png',
   encounterImage: '/experienceabstraction/media/official-2.png',
+  officialMechanicLabel: 'Ways to lose Sanity',
   abstractionConditions: [
     'Isolate yourself from other players',
-    'Stay in the dark for a long time',
+    'Stay in the dark for a very long time',
     'Hang out around abstracted people',
   ],
   source: sources.roblox,

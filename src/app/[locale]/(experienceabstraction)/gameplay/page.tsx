@@ -96,10 +96,11 @@ export default function GameplayPage() {
             The verified loop
           </h2>
           <p className="mt-3 max-w-3xl leading-8 text-slate-300">
-            The official Roblox description lists three ways to abstract. It
-            does not publish a numeric timer, distance threshold, hidden meter,
-            cure, item system, code menu, or tiered character roster. This page
-            keeps the stable loop clear and leaves unverified systems out.
+            The official Roblox description now labels the same three
+            conditions as ways to lose Sanity. It does not publish a numeric
+            timer, distance threshold, hidden meter, cure, item system, code
+            menu, or tiered character roster. This page keeps the stable loop
+            clear and leaves unverified systems out.
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {conditions.map((condition) => {

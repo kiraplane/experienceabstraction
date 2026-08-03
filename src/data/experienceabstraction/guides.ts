@@ -11,7 +11,7 @@ export const guides: Guide[] = [
       'The official Roblox description names three routes: separate from the group, remain in darkness, or stay close to someone who is already abstracted.',
     category: 'Abstraction',
     sourceStrategy: 'user_intent_youtube',
-    checkedAt: '2026-08-01',
+    checkedAt: '2026-08-03',
     videoSearchQueries: [
       'Experience Abstraction how to abstract',
       'How to get abstract in Experience Abstraction Roblox',
@@ -26,7 +26,7 @@ export const guides: Guide[] = [
       channel: 'Roblox Master Guides',
       url: 'https://www.youtube.com/watch?v=D8mBiEX8am4',
       thumbnailUrl: 'https://i.ytimg.com/vi/D8mBiEX8am4/maxresdefault.jpg',
-      checkedAt: '2026-08-01',
+      checkedAt: '2026-08-03',
     },
     tags: ['How to Abstract', 'Roblox', 'Mechanics'],
     difficulty: 'Beginner',
@@ -93,9 +93,9 @@ export const guides: Guide[] = [
     ],
     faq: [
       {
-        question: 'What are the three ways to abstract?',
+        question: 'What are the three official ways to lose Sanity?',
         answer:
-          'The official Roblox description lists isolation from other players, staying in darkness for a long time, and remaining around players who are already abstracted.',
+          'The official Roblox description lists isolation from other players, staying in darkness for a very long time, and remaining around players who are already abstracted.',
       },
       {
         question: 'How long do I need to stay in the dark?',
@@ -105,7 +105,7 @@ export const guides: Guide[] = [
       {
         question: 'Do I need to combine all three conditions?',
         answer:
-          'Run one clean condition first so you can understand the result. The official page presents them as separate ways to abstract, but exact internal thresholds are not public.',
+          'Run one clean condition first so you can understand the result. The official page presents them as separate ways to lose Sanity, but exact internal thresholds are not public.',
       },
       {
         question: 'Why am I not abstracting?',
@@ -124,7 +124,7 @@ export const guides: Guide[] = [
       'Reverse the three published risk conditions: stay with other players, favor bright spaces, and create distance when an abstracted player approaches.',
     category: 'Survival',
     sourceStrategy: 'manual_data',
-    checkedAt: '2026-08-01',
+    checkedAt: '2026-08-03',
     videoSearchQueries: [
       'Experience Abstraction how to avoid abstraction',
       'Experience Abstraction Roblox survival gameplay',
@@ -158,7 +158,7 @@ export const guides: Guide[] = [
       {
         heading: 'Treat darkness as a route choice, not decoration',
         paragraphs: [
-          'The official media uses dramatic lighting, so a colorful room can still have near-black entrances and blind corners. Before entering, identify the next lit space and avoid lingering in the transition. You do not need to panic every time the screen becomes dim; the published condition emphasizes staying in darkness for a long time, which gives you a reason to keep moving toward light.',
+          'The official media uses dramatic lighting, so a colorful room can still have near-black entrances and blind corners. Before entering, identify the next lit space and avoid lingering in the transition. You do not need to panic every time the screen becomes dim; the published condition emphasizes staying in darkness for a very long time, which gives you a reason to keep moving toward light.',
           'If you are exploring, make short trips from one visible area to another instead of settling into an unlit room. When you need to stop, stop where the environment is clearly illuminated. This simple habit protects you without requiring a speculative map of secret safe zones.',
         ],
       },
@@ -228,7 +228,7 @@ export const guides: Guide[] = [
       'Start in the light, learn where players gather, and test one abstraction condition at a time before turning a social server into chaos.',
     category: 'Start Here',
     sourceStrategy: 'popular_youtube',
-    checkedAt: '2026-08-01',
+    checkedAt: '2026-08-03',
     videoSearchQueries: [
       'Experience Abstraction Roblox gameplay',
       'Experience Abstraction beginner guide',
@@ -243,7 +243,7 @@ export const guides: Guide[] = [
       channel: 'craby19',
       url: 'https://www.youtube.com/watch?v=PpZ2Hv1X8w0',
       thumbnailUrl: 'https://i.ytimg.com/vi/PpZ2Hv1X8w0/hqdefault.jpg',
-      checkedAt: '2026-08-01',
+      checkedAt: '2026-08-03',
     },
     tags: ['Beginner', 'Gameplay', 'Official Link'],
     difficulty: 'Beginner',
