@@ -1,6 +1,6 @@
 import type { WikiTopicPage } from './types';
 
-const checkedAt = '2026-08-17';
+const checkedAt = '2026-08-20';
 
 export const wikiTopics: Record<WikiTopicPage['slug'], WikiTopicPage> = {
   codes: {
