@@ -1,6 +1,6 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-09-15';
+export const CHECKED_AT = '2026-10-12';
 
 export const sources = {
   roblox: {
